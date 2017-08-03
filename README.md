@@ -16,4 +16,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5. Also, you can go to `http://localhost:5984/_utils/` to open the database web interface.
 
 ## License
+
 MIT
