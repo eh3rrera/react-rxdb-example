@@ -15,7 +15,6 @@ QueryChangeDetector.enable();
 QueryChangeDetector.enableDebugging();
 
 RxDB.plugin(require('pouchdb-adapter-idb'));
-RxDB.plugin(require('pouchdb-replication'));
 RxDB.plugin(require('pouchdb-adapter-http'));
 
 const syncURL = 'http://localhost:5984/';
@@ -38,6 +37,7 @@ class App extends Component {
     const db = await RxDB.create(
       {name: dbName, adapter: 'idb', password: '12345678'}
     );
+      console.dir(db);
 
     // show who's the leader in page's title
     db.waitForLeadership().then(() => {
