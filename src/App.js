@@ -7,7 +7,8 @@ import {QueryChangeDetector} from 'rxdb';
 import { schema } from './Schema';
 
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+// The following line is not needed for react-toastify v3, only for v2.2.1
+//import 'react-toastify/dist/ReactToastify.min.css';
 
 import * as moment from 'moment';
 
